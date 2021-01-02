@@ -12,8 +12,4 @@ function AddGamePad(argument0) {
 	// not found... so add it
 	ds_list_add(mActiveControllers,argument0);
 	show_debug_message("Controller added: "+string(argument0));
-
-
-
-
 }
