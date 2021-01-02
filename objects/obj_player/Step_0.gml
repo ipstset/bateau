@@ -22,8 +22,6 @@ if(input_face2) show_debug_message("Face 2 pressed...");
 if(input_face3) show_debug_message("Face 3 pressed...");
 if(input_face4) show_debug_message("Face 4 pressed...");
 
-
-
 //---------ALTER SPEED
 if(input_walk || input_run) {
 	spd = abs((input_walk * walk_spd) - (input_run * run_spd));
@@ -37,24 +35,7 @@ moveY = 0;
 
 //---------INTENDED MOVEMENT
 moveX = (input_right - input_left) * spd;
-//only allow movement in 4 directions
-//if(moveX == 0) { moveY = (input_down - input_up) * spd };
 moveY = (input_down - input_up) * spd;
-
-//---------SPRITE
-//set sprite
-//if(moveX < 0)	{ sprite_index = sBlue_Left };
-//if(moveX > 0)	{ sprite_index = sBlue_Right };
-//if(moveY < 0)	{ sprite_index = sBlue_Up };
-//if(moveY > 0)	{ sprite_index = sBlue_Down };
-
-if(moveX == 0 && moveY == 0) { 
-	image_speed = 0;
-	image_index = 0;
-} else {
-	//adjust image speed
-	image_speed = spd * 0.5;
-}
 
 //---------COLLISION CHECKS
 //horizontal
@@ -78,6 +59,23 @@ if(moveY != 0) {
 		moveY = 0;
 	}
 }
+
+//---------SPRITE
+//set sprite
+if(moveY < 0)	{ sprite_index = spr_Alex_up };
+if(moveY > 0)	{ sprite_index = spr_Alex_down };
+if(moveX < 0)	{ sprite_index = spr_Alex_left };
+if(moveX > 0)	{ sprite_index = spr_Alex_right };
+
+if(moveX == 0 && moveY == 0) { 
+	sprite_index = spr_Alex_idle
+	image_speed = 0;
+	image_index = 0;
+} else {
+	//adjust image speed
+	image_speed = spd * 0.5;
+}
+
 
 //---------APPLY MOVEMENT
 x += moveX;

@@ -1,12 +1,18 @@
 {
   "resources": [
+    {"id":{"name":"living_room","path":"sprites/living_room/living_room.yy",},"order":0,},
+    {"id":{"name":"spr_Alex_right","path":"sprites/spr_Alex_right/spr_Alex_right.yy",},"order":2,},
+    {"id":{"name":"spr_Alex_idle","path":"sprites/spr_Alex_idle/spr_Alex_idle.yy",},"order":3,},
     {"id":{"name":"AddGamePad","path":"scripts/AddGamePad/AddGamePad.yy",},"order":0,},
+    {"id":{"name":"spr_Alex_left","path":"sprites/spr_Alex_left/spr_Alex_left.yy",},"order":1,},
     {"id":{"name":"spr_purple_guy","path":"sprites/spr_purple_guy/spr_purple_guy.yy",},"order":1,},
     {"id":{"name":"DoInput","path":"scripts/DoInput/DoInput.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
     {"id":{"name":"RemoveGamePad","path":"scripts/RemoveGamePad/RemoveGamePad.yy",},"order":2,},
     {"id":{"name":"spr_blue16","path":"sprites/spr_blue16/spr_blue16.yy",},"order":0,},
+    {"id":{"name":"spr_Alex_down","path":"sprites/spr_Alex_down/spr_Alex_down.yy",},"order":0,},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},"order":0,},
+    {"id":{"name":"spr_Alex_up","path":"sprites/spr_Alex_up/spr_Alex_up.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -45,6 +51,8 @@
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Contollers.yy","order":1,"resourceVersion":"1.0","name":"Contollers","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Alex.yy","order":3,"resourceVersion":"1.0","name":"Alex","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Rooms.yy","order":4,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

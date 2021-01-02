@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_purple_guy",
-    "path": "sprites/spr_purple_guy/spr_purple_guy.yy",
+    "name": "spr_Alex_idle",
+    "path": "sprites/spr_Alex_idle/spr_Alex_idle.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_Alex_idle",
+    "path": "sprites/spr_Alex_idle/spr_Alex_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
