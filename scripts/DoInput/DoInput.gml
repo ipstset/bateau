@@ -13,9 +13,6 @@ function DoInput() {
 		input_down=true;
 	}
 
-
-
-
 	// do controllers - loop around all active ones.
 	// really a player should be allocated a single controller....
 	var len = ds_list_size(mActiveControllers);
